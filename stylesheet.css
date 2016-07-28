@@ -32,9 +32,18 @@ body {
 #maincontainer {
 }
 
-/*.nopadding {
-	padding: 0 !important;
-}*/
+.main p, .main li {
+	margin-bottom: 14px; /*space everything out*/
+}
+
+.main a {
+	text-decoration: none;
+	color: #0074D9;
+}
+
+.main li {
+	margin-left: 30px;
+}
 
 
 /*navigation*/
@@ -344,12 +353,12 @@ body {
 
 		/*index content*/
 
-.welcome > p > a {
-	text-decoration: none;
-	color: #0074D9;
+.welcome p {
+	font-size: 14pt;
 }
 		
-		
+
+			
 .welcome a img {
 	float: right;
 	width: 80px;
@@ -367,11 +376,6 @@ body {
 }
 
 
-
-.welcome p {
-	font-size: 14pt;
-	margin-bottom: 14px;
-}
 
 
 
