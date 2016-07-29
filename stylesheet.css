@@ -1,3 +1,5 @@
+/*all*/
+
 html {
 	box-sizing: border-box;
 	width: 100%;
@@ -24,26 +26,13 @@ body {
 	background: #AAAAAA;
 }
 
-
-
-
-/*all*/
-
-#maincontainer {
+h1, h2 {
+	text-align: center;
+	margin: 20px 0;
+	width: 100%;
 }
 
-.main p, .main li {
-	margin-bottom: 14px; /*space everything out*/
-}
 
-.main a {
-	text-decoration: none;
-	color: #0074D9;
-}
-
-.main li {
-	margin-left: 30px;
-}
 
 
 /*navigation*/
@@ -332,12 +321,6 @@ body {
 	box-shadow: 0 0 10px #0074D9;	
 }
 
-.mainwrapper h2 {
-	text-align: center;
-	margin: 20px 0;
-	width: 100%;
-}
-
 .main {
 	width: 100%;
 	max-width: 960px;
@@ -347,8 +330,31 @@ body {
 	box-shadow: 0 0 10px black;
 }
 
+@media screen and (max-width: 720px) {
+	.main {
+		padding: 5px;
+	}
+}
+
 .main > div {
 	margin-bottom: 56px;
+}
+
+.main > div:last-child {
+	margin-bottom: 14px;
+}
+
+.main p, .main li {
+	margin-bottom: 14px; /*space everything out*/
+}
+
+.main a {
+	text-decoration: none;
+	color: #0074D9;
+}
+
+.main li {
+	margin-left: 30px;
 }
 
 		/*index content*/
@@ -387,7 +393,6 @@ body {
     left: 0;
     bottom: 0;
 	right: 0;
-	margin: 0 -30px;
 	height: 80vw;
 	min-height: 500px;
 	max-height: 940px;
@@ -456,12 +461,14 @@ body {
 
 
 .galvideos iframe {
-	width: 80%;
+	width: 100%;
 	height: auto;
+	margin-bottom: 14px;
 }
 
 .galimages img {
-	width: 80%;
+	width: 100%;
+	margin-bottom: 14px;
 }
 
 
@@ -506,7 +513,7 @@ body {
 }
 
 
-.lyrics h2, .lyrics h3, .lyrics p {
+.lyrics h3, .lyrics p {
 	margin: 20px 0;
 	text-align: center;
 }
