@@ -457,6 +457,7 @@ body {
 
 .galvideos iframe {
 	width: 80%;
+	height: auto;
 }
 
 .galimages img {
