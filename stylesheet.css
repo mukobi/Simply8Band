@@ -290,7 +290,10 @@ h3 {
 	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 
-.title a {text-decoration: none;}
+.title a {
+	text-decoration: none;
+	display: block;
+}
 
 .maintitle, .subtitle {
 	font-family: 'Galada', Georgia, Serif;
@@ -298,6 +301,8 @@ h3 {
 	-webkit-transition: all 300ms ease-in;
 	transition: all 300ms ease-in;
 	text-decoration: bold;
+	width: 100%;
+	display: block;
 }
 
 /* smaller than tablet */
@@ -316,8 +321,10 @@ h3 {
 }
 .title:hover {
 	background: rgba(255,255,255,1);
-	padding: 10px;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+.title:hover a {
+	padding: 10px;
 }
 
 
