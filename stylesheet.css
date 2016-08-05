@@ -496,9 +496,13 @@ h3 {
 
 
 .galvideos iframe {
-	width: 100%;
-	height: auto;
+	width: 88vw;
+	height: 50vw;
+	/* height: auto; */
+	/* min-height: 600px; */
 	margin-bottom: 14px;
+	max-width: 880px;
+	max-height: 500px;
 }
 
 .galimages img {
