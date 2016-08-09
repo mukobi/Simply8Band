@@ -11,10 +11,10 @@ html {
 	box-sizing: inherit;
 }
 
+
 * {
 	margin: 0;
 	padding: 0;
-	
 	/*font defaults*/
 	font-family: 'Lato', sans-serif;
 	color: #001f3f;
@@ -406,15 +406,8 @@ h3 {
 	height: 80px;
 	margin: 10px;
 	display: inline;
-	-webkit-transition: width 300ms, height 300ms, margin 300ms;
-	transition: width 300ms, height 300ms, margin 300ms;
 }
 
-.welcome a img:hover {
-	width: 100px;
-	height: 100px;
-	margin: 0;
-}
 
 
 
