@@ -428,19 +428,32 @@ h3 {
 	background: #1b95e0;
 	display: block;
 	color: white;
-	padding: 5px;
+	padding: 5px 10px 5px 5px;
 	border-radius: 3px;
 	max-width: 250px;
 	text-align: center;
 	line-height: 28px;
 	font-size: 16px;
+	position: relative;
 }
 
 .main .twitter-follow-button i {
 	background-image: url("images/social_media/twitter_bird.svg");
-	width: 18px;
-	height: 18px;
+	width: 28px;
+	height: 28px;
 	display: inline-block;
+	position: absolute;
+	left: 5px;
+}
+
+.main .twitter-follow-button span {
+	color: inherit;
+	position: relative;
+	left: 16px;
+}
+
+.main .twitter-follow-button:hover {
+	background: #0c7abf
 }
 
 
