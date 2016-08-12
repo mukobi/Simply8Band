@@ -16,7 +16,7 @@ html {
 	margin: 0;
 	padding: 0;
 	/*font defaults*/
-	font-family: 'Lato', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	color: #001f3f;
 }
 
@@ -308,10 +308,6 @@ h3 {
 	display: block;
 }
 
-/* smaller than tablet */
-@media screen and (max-width: 720px) {
-	.subtitle {display:none;}
-}
 
 .maintitle {font-size: 30pt;}
 .subtitle {font-size: 20pt;}
@@ -701,4 +697,20 @@ h3 {
 	padding-bottom: 30px;
 	box-shadow: 0 -1px 1px rgba(0,0,0,0.3);
 	z-index: 1;
+}
+
+
+
+/***Master Display Styling***/
+
+/*default - desktop*/
+.display_desktop {display: block;}
+.display_mobile {display:none;}
+
+
+
+/* smaller than tablet */
+@media screen and (max-width: 720px) {
+	.display_desktop {display: none;}
+	.display_mobile {display: block;}
 }
