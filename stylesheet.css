@@ -18,7 +18,7 @@ html {
 	/*font defaults*/
 	font-family: 'PT Sans', sans-serif;
 	color: #001f3f;
-	text-align: justify;
+	
 }
 
 body {
@@ -66,8 +66,6 @@ h3 {
 	left: 4vw;
 }
 
-
-
 .navlist {
 	position: fixed;
 	right: 2.6vw;
@@ -83,6 +81,7 @@ h3 {
 	    justify-content: space-around;
 }
 
+	/*replace full nav items for smaller screens*/
 @media screen and (max-width: 1000px) {
 	.navigation > a {left: 1.8vw;}
 }
@@ -132,14 +131,15 @@ h3 {
 	display: none;
 }
 
-/* smaller than tablet */
+/* navigation for smaller than tablet/mobile */
 @media screen and (max-width: 720px) {
 	
 	
 	.navigation > a {
 		display: block;
 		left: 50%;
-		transform: translate(-50%, 0%);
+		-webkit-transform: translate(-50%, 0%);
+		        transform: translate(-50%, 0%);
 	}
 	
 	.navlist {
@@ -286,6 +286,7 @@ h3 {
 	text-align: center;
 	z-index: 3;
 	background: rgba(255,255,255,0.4);
+	-webkit-transition: all 300ms ease-in;
 	transition: all 300ms ease-in;
 	padding: 0px;
 	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
@@ -296,6 +297,7 @@ h3 {
 	display: block;
 	padding-left: 3px;
 	padding-right: 3px;
+	-webkit-transition: padding 300ms;
 	transition: padding 300ms;
 }
 
@@ -316,13 +318,16 @@ h3 {
 .title:hover .maintitle {
 	font-size: 40pt;
 }
+
 .title:hover .subtitle {
 	font-size: 30pt;
 }
+
 .title:hover {
 	background: rgba(255,255,255,1);
 	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
+
 .title:hover a {
 	padding: 10px;
 }
@@ -344,7 +349,7 @@ h3 {
 	background: #0074D9;
 
 	padding: 0;
-	/* box-shadow: 0 5px 5px #0074D9;	 */
+	
 }
 
 .mainpaddingdiv {
@@ -359,7 +364,7 @@ h3 {
 	padding: 40px;
 	background: white;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-
+	text-align: justify;
 }
 
 @media screen and (max-width: 720px) {
@@ -401,9 +406,14 @@ h3 {
 		
 		
 .fb_buttons {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .fb_buttons > * {
@@ -472,7 +482,8 @@ h3 {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	z-index: 10;
 }
  
@@ -577,8 +588,11 @@ h3 {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	    justify-content: space-around;
-		align-items: flex-start;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 }
 
 .lyricsflex div {
@@ -673,16 +687,16 @@ h3 {
 	
 	.members > div > h3 {text-align: center;}
 	
-	.ord1 {order: 1;}
-	.ord2 {order: 2;}
-	.ord3 {order: 3;}
-	.ord4 {order: 4;}
-	.ord5 {order: 5;}
-	.ord6 {order: 6;}
-	.ord7 {order: 7;}
-	.ord8 {order: 8;}
-	.ord9 {order: 9;}
-	.ord10 {order: 10;}
+	.ord1 {-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+	.ord2 {-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
+	.ord3 {-webkit-box-ordinal-group: 4;-ms-flex-order: 3;order: 3;}
+	.ord4 {-webkit-box-ordinal-group: 5;-ms-flex-order: 4;order: 4;}
+	.ord5 {-webkit-box-ordinal-group: 6;-ms-flex-order: 5;order: 5;}
+	.ord6 {-webkit-box-ordinal-group: 7;-ms-flex-order: 6;order: 6;}
+	.ord7 {-webkit-box-ordinal-group: 8;-ms-flex-order: 7;order: 7;}
+	.ord8 {-webkit-box-ordinal-group: 9;-ms-flex-order: 8;order: 8;}
+	.ord9 {-webkit-box-ordinal-group: 10;-ms-flex-order: 9;order: 9;}
+	.ord10 {-webkit-box-ordinal-group: 11;-ms-flex-order: 10;order: 10;}
 	
 }
 
@@ -690,7 +704,7 @@ h3 {
 /*footer*/
 
 .footer {
-	width: 100%;
+	/* width: 100%; */
 	background: #AAAAAA;
 	color: white;
 	text-align: center;
@@ -698,6 +712,30 @@ h3 {
 	padding-bottom: 30px;
 	box-shadow: 0 -1px 1px rgba(0,0,0,0.3);
 	z-index: 1;
+}
+
+.footerwidthwrapper {max-width: 960px; margin: 0 auto; padding: 0 40px;}
+
+@media screen and (max-width: 720px) {
+	.footerwidthwrapper {padding: 0 15px;}
+}
+
+.footerwidthwrapper > div {
+	margin-bottom: 16px;
+}
+
+.footernav ul {list-style: none;}
+
+.footernav ul a {
+	text-decoration: none;
+}
+
+.footernav ul li {display:inline;}
+
+.footernav ul li:not(:first-child):before {
+	content: "// ";
+	position: relative;
+	left: -1px;
 }
 
 
