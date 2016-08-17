@@ -8,6 +8,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</HEAD>
 	<BODY>
+	<div id="fb-root"></div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1"; 
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 	<input type="checkbox" id="sidebartoggler" name="" value="" />
 	<div id="maincontainer">
 		<div class="navigation">
@@ -60,9 +69,8 @@
 							<p>
 								Also, please check out <a href="https://twitter.com/simply__8">our Twitter account. </a>
 							</p>
-							<a href="https://twitter.com/simply__8" class="twitter-follow-button"><i></i>
-								<span>Follow @simply__8 on Twitter</span>
-							</a>
+							<a href="https://twitter.com/simply__8" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @simply__8</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<a href="https://twitter.com/intent/tweet?screen_name=simply__8" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @simply__8</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							<p>On both of these social media, we post rather frequently with new pictures, recently scheduled gigs, reminders for upcoming events, and general announcements. If you like us, please like, share, and follow us as it is very much appreciated!</p>
 							
 						</div>
@@ -70,6 +78,12 @@
 				</div>
 				<div class="footer">
 					<div class="footerwidthwrapper">
+						<div class="twitterfeed">
+							<a class="twitter-timeline" data-lang="en" data-height="500" href="https://twitter.com/simply__8">Tweets by simply__8</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						<div class="fbfeed" style="width: 400px;">
+							<div class="fb-page" data-href="https://www.facebook.com/Simply-8-1146649205385881/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Simply-8-1146649205385881/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Simply-8-1146649205385881/">Simply 8</a></blockquote></div>
+						</div>
 						<div class="footernav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
