@@ -696,6 +696,15 @@ h3 {
 	overflow: hidden;
 }
 
+@media screen and (max-width: 720px) {
+	.footer .fbfeed, .footer .twitterfeed {
+		width: 100%;
+		min-width: 0px;
+		display: inline-block;
+		overflow: hidden;
+	}
+}
+
 .footernav ul {list-style: none;}
 
 .footernav ul a {
