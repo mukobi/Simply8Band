@@ -694,6 +694,7 @@ h3 {
 	width: 49%;
 	min-width: 300px;
 	display: inline-block;
+	overflow: hidden;
 }
 
 .footernav ul {list-style: none;}
