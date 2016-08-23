@@ -383,6 +383,7 @@ h3 {
 
 .main > div {
 	margin-bottom: 56px;
+	width: 100%;
 }
 
 .main > div:last-child {
@@ -436,27 +437,27 @@ h3 {
 	margin-bottom: 14px;
 }
 
-.home_social {
+.main div.home_social {
 	width: 60%;
 }
 
-.upcoming_events {
+.main div.upcoming_events {
 	text-align: center;
 	width: 35%;
 }
 
 @media screen and (max-width: 720px) { /*too small to have upcoming events next to homesocial*/
-	.home_social, .upcoming_events {
+	.main div.home_social, .main div.upcoming_events {
 		width: 100%;
 	}
 }
 
-.upcoming_events > div {
+.main div.upcoming_events > div {
 	position: relative;
 	height: 500px;
 }
 
-.upcoming_events iframe {
+.main div.upcoming_events iframe {
 	position: absolute;
 	width: 100%;
 	height: 100%;
