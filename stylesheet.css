@@ -394,6 +394,10 @@ h3 {
 	margin-bottom: 14px; /*space everything out*/
 }
 
+.main li > ul {
+	margin-top: 14px; /*spacing for first element of tiered lists*/
+}
+
 .main a {
 	text-decoration: none;
 	color: #0074D9;
