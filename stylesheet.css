@@ -709,6 +709,20 @@ h3 {
 	.ord9 {-webkit-box-ordinal-group: 10;-ms-flex-order: 9;order: 9;}
 	.ord10 {-webkit-box-ordinal-group: 11;-ms-flex-order: 10;order: 10;}
 	
+}\
+
+
+
+/*store*/
+
+/*donate*/
+.paypal-donate form {
+	text-align: center;
+}
+
+.paypal-donate form input {
+	display: block;
+	margin: 0 auto;
 }
 
 
