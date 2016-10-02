@@ -722,7 +722,9 @@ h3 {
 	    justify-content: space-around;
 }
 
-
+.online-vendor-list div {
+	padding: 8px;
+}
 
 /*donate*/
 .paypal-donate form {
