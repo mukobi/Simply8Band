@@ -738,7 +738,6 @@ h3 {
 /*footer*/
 
 .footer {
-	/* width: 100%; */
 	background: #AAAAAA;
 	color: white;
 	text-align: center;
@@ -758,6 +757,8 @@ h3 {
 	margin-bottom: 16px;
 }
 
+
+	/*individual footer subdivs*/
 .footer .fbfeed, .footer .twitterfeed {
 	width: 49%;
 	min-width: 300px;
@@ -773,6 +774,8 @@ h3 {
 		overflow: hidden;
 	}
 }
+
+
 
 .footernav ul {list-style: none;}
 
