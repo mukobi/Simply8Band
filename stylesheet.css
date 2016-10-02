@@ -709,11 +709,22 @@ h3 {
 	.ord9 {-webkit-box-ordinal-group: 10;-ms-flex-order: 9;order: 9;}
 	.ord10 {-webkit-box-ordinal-group: 11;-ms-flex-order: 10;order: 10;}
 	
-}\
+}
 
 
 
 /*store*/
+.online-vendor-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+
 
 /*donate*/
 .paypal-donate form {
