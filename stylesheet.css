@@ -328,18 +328,35 @@ h3 {
 	padding: 10px;
 }
 
-/*title img effects on text hover - removed for speed*/
-/* .title:hover + img {
-  -webkit-filter: blur(5px) opacity(0.8);
-  filter: blur(5px) opacity(0.8);
-  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
-  -webkit-transform: scale(1.075);
-          transform: scale(1.075);
-} */
 
-	/*main content*/
+	/*online distribution*/
+	
+.online-dist-wrapper {
+	/* background: #DDDDDD; */
+	background: white; 
+	width: 100%;
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
+.online-dist-wrapper div {
+	margin: 10px;
+}
 
+.online-dist-wrapper img {
+	height: 80px;
+}
+
+@media screen and (max-width: 720px) {
+	.online-dist-wrapper {
+		padding: 20px;
+	}
+	.online-dist-wrapper img {
+		height: 60px;
+	}
+}
 	
 .mainwrapper {
 	background: #0074D9;
