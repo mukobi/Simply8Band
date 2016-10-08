@@ -262,6 +262,7 @@ h3 {
 	height: auto;
 	overflow: hidden;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+	z-index: 5;
 }
 
 .titleimg {
@@ -269,7 +270,7 @@ h3 {
 	filter: blur(0px) opacity(0.9);
 	width: 100%;
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	display: block;
 }
 
@@ -280,7 +281,7 @@ h3 {
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	text-align: center;
-	z-index: 3;
+	z-index: 5;
 	background: rgba(255,255,255,0.4);
 	-webkit-transition: all 300ms ease-in;
 	transition: all 300ms ease-in;
@@ -339,6 +340,9 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+	position: relative;
+	z-index: 4;
 }
 
 .online-dist-wrapper div {
@@ -360,9 +364,8 @@ h3 {
 	
 .mainwrapper {
 	background: #0074D9;
-
 	padding: 0;
-	
+	z-index: 3;
 }
 
 .mainpaddingdiv {
