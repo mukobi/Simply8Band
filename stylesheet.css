@@ -259,19 +259,43 @@ h3 {
 .titlebar {
 	position: relative;
 	width: 100%;
-	height: auto;
+	height: 56.25vw;
+	max-height: 720px;
 	overflow: hidden;
 	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 	z-index: 5;
 }
 
-.titleimg {
-	-webkit-filter: blur(0px) opacity(0.9);
-	filter: blur(0px) opacity(0.9);
+	/*mobile titlebar*/
+@media screen and (max-width: 720px) {
+	.titlebar {
+		height: 80vw;
+	}
+	
+	
+}
+
+
+	/*carousel*/
+#index_carousel > img {
 	width: 100%;
-	position: relative;
-	z-index: 5;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
 	display: block;
+}
+
+#index_carousel .active {
+	z-index: 3; /*active carousel img has z-index 3, next image has 2, all others have 1*/	
+}
+
+@media screen and (max-width: 720px) {
+	#index_carousel > img {
+		height: 80vw;
+		width: 142.2vw;
+	}
 }
 
 .title {
@@ -281,59 +305,42 @@ h3 {
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	text-align: center;
-	z-index: 6;
-	background: rgba(255,255,255,0.4);
-	-webkit-transition: all 300ms ease-in;
-	transition: all 300ms ease-in;
-	padding: 0px;
-	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+	z-index: 4;
+	width: 100%;
 }
 
 .title a {
 	text-decoration: none;
 	display: block;
-	padding-left: 3px;
-	padding-right: 3px;
-	-webkit-transition: padding 300ms;
-	transition: padding 300ms;
 }
 
 .maintitle, .subtitle {
 	font-family: 'Galada', Georgia, Serif;
 	color: #0074D9;
-	-webkit-transition: all 300ms ease-in;
-	transition: all 300ms ease-in;
+	text-shadow:
+   -1px -1px 0 white,  
+    1px -1px 0 white,
+    -1px 1px 0 white,
+     1px 1px 0 white;
 	text-decoration: bold;
 	width: 100%;
 	display: block;
 }
 
+		/*desktop-tablet title font sizes*/
+.maintitle {font-size: 50pt;}
+.subtitle {font-size: 30pt;}
 
-.maintitle {font-size: 30pt;}
-.subtitle {font-size: 20pt;}
-
-.title:hover .maintitle {
-	font-size: 40pt;
-}
-
-.title:hover .subtitle {
-	font-size: 30pt;
-}
-
-.title:hover {
-	background: rgba(255,255,255,1);
-	box-shadow: 0 5px 5px rgba(0,0,0,0.3);
-}
-
-.title:hover a {
-	padding: 10px;
+		/*mobile title font sizes*/
+@media screen and (max-width: 720px) {
+	.maintitle {font-size: 30pt;}
+	.subtitle {font-size: 20pt;}
 }
 
 
-	/*online distribution*/
+	/*online distribution banner*/
 	
 .online-dist-wrapper {
-	/* background: #DDDDDD; */
 	background: white; 
 	width: 100%;
 	padding: 40px;
