@@ -271,8 +271,6 @@ h3 {
 	.titlebar {
 		height: 80vw;
 	}
-	
-	
 }
 
 
@@ -572,8 +570,34 @@ h3 {
 
 /*gallery*/
 
+
+
+
+
+.galleryfolders {
+	text-align: center;
+}
+
 .galleryfolders img {
-	width: 100%;
+	width: 77%;
+}
+
+.galleryfolders a h3 {
+	color: #0074D9;
+}
+
+.galleryfolders div {
+	margin: 60px;
+}
+
+
+@media screen and (max-width: 720px) { /*larger pictures and divs on mobile*/
+	.galleryfolders img {
+		width: 87%;
+	}
+	.galleryfolders div {
+		margin: 45px 18px;
+	}
 }
 
 
