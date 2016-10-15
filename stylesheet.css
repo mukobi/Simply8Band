@@ -271,8 +271,6 @@ h3 {
 	.titlebar {
 		height: 80vw;
 	}
-	
-	
 }
 
 
@@ -412,7 +410,7 @@ h3 {
 }
 
 .main > div {
-	margin-bottom: 56px;
+	margin-bottom: 42px;
 	width: 100%;
 }
 
@@ -572,27 +570,35 @@ h3 {
 
 /*gallery*/
 
-.galvideos, .galimages {
-	height: 100%;
+
+
+
+
+.galleryfolders {
 	text-align: center;
 }
 
-
-.galvideos iframe {
-	width: 88vw;
-	height: 50vw;
-	/* height: auto; */
-	/* min-height: 600px; */
-	margin-bottom: 14px;
-	max-width: 880px;
-	max-height: 500px;
+.galleryfolders img {
+	width: 77%;
 }
 
-.galimages img {
-	width: 100%;
-	margin-bottom: 14px;
+.galleryfolders a h3 {
+	color: #0074D9;
 }
 
+.galleryfolders div {
+	margin: 60px;
+}
+
+
+@media screen and (max-width: 720px) { /*larger pictures and divs on mobile*/
+	.galleryfolders img {
+		width: 87%;
+	}
+	.galleryfolders div {
+		margin: 45px 18px;
+	}
+}
 
 
 /*music*/
