@@ -341,7 +341,7 @@ h3 {
 .online-dist-wrapper {
 	background: white; 
 	width: 100%;
-	padding: 40px;
+	padding: 25px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -355,22 +355,23 @@ h3 {
 }
 
 .online-dist-wrapper div {
-	margin: 10px;
+	margin: 7px;
 }
 
 .online-dist-wrapper img {
-	height: 80px;
+	height: 60px;
 }
 
 @media screen and (max-width: 720px) {
 	.online-dist-wrapper {
-		padding: 20px;
+		padding: 15px;
 	}
 	.online-dist-wrapper img {
-		height: 60px;
+		height: 45px;
 	}
 }
-	
+
+/*main containers styling*/	
 .mainwrapper {
 	background: #0074D9;
 	padding: 0;
@@ -438,10 +439,6 @@ h3 {
 		/*index content*/
 
 .homepage {font-size: 20pt;}
-
-.welcome > a {
-	/* margin-bottom: 14px; */ /*space everything out*/
-}
 				
 .fb_buttons {
 	display: -webkit-box;
@@ -569,11 +566,6 @@ h3 {
 
 
 /*gallery*/
-
-
-
-
-
 .galleryfolders {
 	text-align: center;
 }
